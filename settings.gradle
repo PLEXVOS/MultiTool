@@ -5,14 +5,19 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    // Permette ai moduli locali (come module-ffmpeg) di usare flatDir
+    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
+
     repositories {
         google()
         mavenCentral()
         maven { url 'https://jitpack.io' }
     }
 }
+
 rootProject.name = "MultiTool"
+
 include ':app'
 include ':module-ffmpeg'
