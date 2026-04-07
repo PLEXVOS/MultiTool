@@ -17,3 +17,9 @@ dependencyResolutionManagement {
         }
     }
 }
+
+rootProject.name = "MultiTool"
+
+// 🔥 Aggiunta necessaria: inclusione dei moduli
+include ':app'
+include ':module-ffmpeg'
