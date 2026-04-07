@@ -7,17 +7,13 @@ pluginManagement {
 }
 
 dependencyResolutionManagement {
-    // Permette ai moduli locali (come module-ffmpeg) di usare flatDir
-    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
-
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
         maven { url 'https://jitpack.io' }
+        flatDir {
+            dirs 'module-ffmpeg/libs'
+        }
     }
 }
-
-rootProject.name = "MultiTool"
-
-include ':app'
-include ':module-ffmpeg'
