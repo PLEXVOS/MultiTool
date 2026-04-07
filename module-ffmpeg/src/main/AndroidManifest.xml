@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permessi dichiarati anche nel modulo per sicurezza -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application android:requestLegacyExternalStorage="true">
+
+        <!-- MainActivity del modulo: entry point lanciato da MultiTool -->
+        <activity
+            android:name="com.exe.ffmpeg.MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.FFmpegModule" />
+
+        <activity android:name="com.exe.ffmpeg.MergeActivity" android:exported="false" android:theme="@style/Theme.FFmpegModule" />
+        <activity android:name="com.exe.ffmpeg.SplitActivity" android:exported="false" android:theme="@style/Theme.FFmpegModule" />
+        <activity android:name="com.exe.ffmpeg.TrimVideoActivity" android:exported="false" android:theme="@style/Theme.FFmpegModule" />
+        <activity android:name="com.exe.ffmpeg.TrimAudioActivity" android:exported="false" android:theme="@style/Theme.FFmpegModule" />
+        <activity android:name="com.exe.ffmpeg.ExtractAudioActivity" android:exported="false" android:theme="@style/Theme.FFmpegModule" />
+        <activity android:name="com.exe.ffmpeg.ConvertActivity" android:exported="false" android:theme="@style/Theme.FFmpegModule" />
+        <activity android:name="com.exe.ffmpeg.LogActivity" android:exported="false" android:theme="@style/Theme.FFmpegModule" />
+
+    </application>
+
+</manifest>

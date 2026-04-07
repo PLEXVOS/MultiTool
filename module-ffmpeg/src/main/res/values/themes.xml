@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema usato da tutte le Activity del modulo FFmpeg -->
+    <style name="Theme.FFmpegModule" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/ffmpeg_orange</item>
+        <item name="colorPrimaryContainer">@color/ffmpeg_orange_light</item>
+        <item name="colorOnPrimary">@color/ffmpeg_white</item>
+        <item name="android:windowBackground">@color/ffmpeg_bg_dark</item>
+        <item name="android:statusBarColor">@color/ffmpeg_bg_dark</item>
+        <item name="android:navigationBarColor">@color/ffmpeg_bg_dark</item>
+    </style>
+</resources>

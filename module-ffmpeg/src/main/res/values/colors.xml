@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Prefisso ffmpeg_ per evitare conflitti con colori di MultiTool -->
+    <color name="ffmpeg_bg_dark">#0F0F0F</color>
+    <color name="ffmpeg_bg_card">#1A1A1A</color>
+    <color name="ffmpeg_bg_card2">#222222</color>
+    <color name="ffmpeg_orange">#FF6600</color>
+    <color name="ffmpeg_orange_light">#FF8800</color>
+    <color name="ffmpeg_orange_dim">#99440000</color>
+    <color name="ffmpeg_white">#FFFFFF</color>
+    <color name="ffmpeg_grey">#888888</color>
+    <color name="ffmpeg_cyan_accent">#00CCDD</color>
+    <!-- Alias senza prefisso usati dai layout esistenti -->
+    <color name="bg_dark">#0F0F0F</color>
+    <color name="bg_card">#1A1A1A</color>
+    <color name="bg_card2">#222222</color>
+    <color name="orange">#FF6600</color>
+    <color name="orange_light">#FF8800</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#888888</color>
+    <color name="cyan_accent">#00CCDD</color>
+</resources>

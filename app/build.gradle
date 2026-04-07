@@ -1,0 +1,55 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.exe.multitool'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.exe.multitool"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    configurations.all {
+        resolutionStrategy {
+            force 'androidx.emoji2:emoji2:1.3.0'
+        }
+    }
+}
+
+dependencies {
+    implementation "androidx.core:core-ktx:1.10.1"
+    implementation "androidx.core:core:1.10.1"
+    implementation "androidx.recyclerview:recyclerview:1.3.1"
+    implementation 'com.google.android.material:material:1.12.0'
+
+    // Modulo FFmpeg integrato
+    implementation project(':module-ffmpeg')
+
+    // -------------------------------------------------------
+    // Futuri moduli: aggiungere qui
+    // implementation project(':module-imagetool')
+    // -------------------------------------------------------
+
+    testImplementation "junit:junit:4.13.2"
+}
